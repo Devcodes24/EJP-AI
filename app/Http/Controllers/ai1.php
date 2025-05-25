@@ -22,7 +22,7 @@ class ai1 extends Controller
         $userInput = $request->input('question');
 
         $response = Http::withHeaders([
-            'Authorization' => 'Bearer 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',
+            'Authorization' => 'Bearer ' . env('DEEPSEEK_API_KEY'),
             'Content-Type' => 'application/json',
         ])->post('https://openrouter.ai/api/v1/chat/completions', [
             'model' => 'deepseek/deepseek-r1:free', // or another model name if applicable
