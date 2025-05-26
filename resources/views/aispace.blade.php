@@ -167,7 +167,7 @@
 
     <form method="post" action="/ai2" id="chatForm">
         @csrf
-        <label for="prompt">Ask your query here:</label><br>
+        <label for="prompt">Plan your trip here:</label><br>
         <textarea id="prompt" name="question" rows="4" cols="50"></textarea><br><br>
         <input type="submit" value="Send" >
     </form>
