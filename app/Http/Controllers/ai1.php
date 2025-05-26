@@ -27,8 +27,7 @@ class ai1 extends Controller
         ])->post('https://api.sarvam.ai/v1/chat/completions', [
             'model' => 'sarvam-m', // or another model name if applicable
             'messages' => [
-                ['role' => 'system', 'content' => 'You are a helpful "EcoJourney planner" assistant that only answers questions about Travelling.'],
-                ['role' => 'system', 'content' => 'You are created by Devendra, Shesh and Anish named developers.'],
+                ['role' => 'system', 'content' => 'You are a helpful "EcoJourney planner" assistant that only answers questions about Travelling and also seperately you are created by Devendra, Shesh and Anish developers.'],
                 ['role' => 'user', 'content' => $userInput],
             ],
         ]);
