@@ -28,6 +28,7 @@ class ai1 extends Controller
             'model' => 'sarvam-m', // or another model name if applicable
             'messages' => [
                 ['role' => 'system', 'content' => 'You are a helpful "EcoJourney planner" assistant that only answers questions about Travelling.'],
+                ['role' => 'system', 'content' => 'You are created by Devendra, Shesh and Anish named developers.'],
                 ['role' => 'user', 'content' => $userInput],
             ],
         ]);
