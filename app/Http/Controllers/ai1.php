@@ -21,7 +21,7 @@ class ai1 extends Controller
     {
         $userInput = $request->input('question');
 
-        $response = Http::withHeaders([
+       $response = Http::withHeaders([
             'Authorization' => 'Bearer ' . env('DEEPSEEK_API_KEY'),
             'Content-Type' => 'application/json',
         ])->post('https://api.sarvam.ai/v1/chat/completions', [
